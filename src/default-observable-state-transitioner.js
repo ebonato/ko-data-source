@@ -21,7 +21,7 @@ define(['knockout'], function (ko) {
             var makeObservable = function (o, bindingObservable) //create observables recursively
             {
                Object.keys(o).forEach(function (p) {
-                  if (typeof o[p] === 'object' && o[p] != null) {
+                  if (typeof o[p] === 'object' && o[p] !== null) {
                      bindingObservable[p] = o[p];
                      if (o[p]) {
                         propertyNameParent += p + '.';
@@ -36,7 +36,7 @@ define(['knockout'], function (ko) {
                         bindingObservable[p] = o[p];
                   }
                });
-            }
+            };
             makeObservable(entry, observable);
             return observable;
         },
@@ -48,7 +48,7 @@ define(['knockout'], function (ko) {
             var updateObservable = function (o, bindingObservable) //update observables recursively
             {
                Object.keys(o).forEach(function (p) {
-                  if (typeof o[p] === 'object' && o[p] != null) {
+                  if (typeof o[p] === 'object' && o[p] !== null) {
                      if (o[p] && bindingObservable) {
                         updateObservable(o[p], bindingObservable[p]);
                      }
@@ -62,7 +62,7 @@ define(['knockout'], function (ko) {
                         bindingObservable[p] = ko.unwrap(o[p]);
                   }
                });
-            }
+            };
             updateObservable(updatedEntry, observable);
             return observable;
         },

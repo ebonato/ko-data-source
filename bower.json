@@ -1,8 +1,8 @@
 {
   "name": "ko-data-source",
   "main": "dist/ko-data-source.js",
-  "description": "API for filtering, ordering and clipping a collection of objects. Implements the interface required by the ko-grid component.",
-  "authors": ["Ben Schulz (https://github.com/benschulz)"],
+  "description": "ebonato fork: API for filtering, ordering and clipping a collection of objects. Implements the interface required by the ko-grid component.",
+  "authors": ["Eduardo Bonato (https://github.com/ebonato)"],
   "license": "BSD-3-Clause",
   "keywords": [
     "data-source",
@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/benschulz/ko-data-source.git"
+    "url": "http://github.com/ebonato/ko-data-source.git"
   },
   "dependencies": {
     "knockout": "^3.3.0"
@@ -19,6 +19,6 @@
     "indexed-list": "benschulz/indexed-list",
     "onefold-js": "benschulz/onefold-js",
     "onefold-lists": "benschulz/onefold-lists",
-    "stringifyable": "benschulz/stringifyable"
+    "stringifyable": "ebonato/stringifyable"
   }
 }
