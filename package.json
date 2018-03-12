@@ -9,5 +9,31 @@
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
     "grunt-commons": "benschulz/grunt-commons"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.0",
+    "es6-arrow-function": "^0.6.6",
+    "grunt-closurecompiler": "^0.9.9",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-requirejs": "^1.0.0",
+    "grunt-jsdoc": "^2.2.1",
+    "grunt-karma": "^2.0.0",
+    "jaguarjs-jsdoc": "^1.1.0",
+    "karma": "^2.0.0",
+    "karma-babel-preprocessor": "^7.0.0",
+    "karma-chai-plugins": "^0.9.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage": "^1.1.1",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-html-reporter": "^0.2.7",
+    "karma-mocha": "^1.3.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-requirejs": "^1.1.0",
+    "mocha": "^5.0.4",
+    "requirejs": "^2.3.5",
+    "requirejs-plugins": "^1.0.2",
+    "simulant": "^0.2.2"
   }
 }
